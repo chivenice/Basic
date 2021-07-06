@@ -52,11 +52,18 @@ function showObjectInfo(renderringObj) {
 showObjectInfo({obj,undefinedTest, nullTest})
 
 //Array
-const arr = ["Chi",2,9,"Misery"];
+const arr = ["Chi",2,9,"Misery",1997];
 arr.push("$")
+
 /* showObjectInfo(arr[0])
 showObjectInfo(arr[4]) */
-showObjectInfo(arr.indexOf("1")) // -1 : dữ liệu nằm ngoài array
+// showObjectInfo(arr.indexOf("1")) // -1 : dữ liệu nằm ngoài array */ 
+
+//Loop (for, whille, do while)
+for (let index = 0;index<5;index+=3) {
+    showObjectInfo(arr[index])
+}
+
 
 
 
