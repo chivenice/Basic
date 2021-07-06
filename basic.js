@@ -89,4 +89,15 @@ num2 = num1 - num2 //11-6 =5
 num1 = num1 - num2 //11-5 =6
 
 num1^=num2^=num1^=num2 /* chi co 2 bien */
+/* 
+1001 num1
+1010 num2
+num1 = 0011
+num2 = 1001
+num1 = 1010
+*/
 
+// index++ va ++index
+let index =5
+let test1 = ++index
+showObjectInfo(test1)
