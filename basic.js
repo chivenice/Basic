@@ -8,7 +8,7 @@ let nullTest = null;
 
 const name = "Chi"
 const number = "1"
-const chi = {
+const obj = {
     firstName: "Nguyen",
     lastName: "Chi",
     age: 18,
@@ -35,7 +35,7 @@ else {
 }  */
 
 // switch case
-switch (chi.age) {
+/* switch (chi.age) {
     case 18:
     case 23:
         console.log("Chi 23 tuoi")
@@ -43,6 +43,20 @@ switch (chi.age) {
     default:
         console.log("Khong biet")
         break;
+} */
+
+//Function
+function showObjectInfo(renderringObj) {
+    console.log(renderringObj)
 }
+showObjectInfo({obj,undefinedTest, nullTest})
+
+//Array
+const arr = ["Chi",2,9,"Misery"];
+arr.push("$")
+/* showObjectInfo(arr[0])
+showObjectInfo(arr[4]) */
+showObjectInfo(arr.indexOf("1")) // -1 : dữ liệu nằm ngoài array
+
 
 
