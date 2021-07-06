@@ -49,10 +49,10 @@ else {
 function showObjectInfo(renderringObj) {
     console.log(renderringObj)
 }
-showObjectInfo({obj,undefinedTest, nullTest})
+showObjectInfo({ obj, undefinedTest, nullTest })
 
 //Array
-const arr = ["Chi",2,9,"Misery",1997];
+const arr = ["Chi", 2, 9, "Misery", 1997];
 arr.push("$")
 
 /* showObjectInfo(arr[0])
@@ -60,10 +60,33 @@ showObjectInfo(arr[4]) */
 // showObjectInfo(arr.indexOf("1")) // -1 : dữ liệu nằm ngoài array */ 
 
 //Loop (for, whille, do while)
-for (let index = 0;index<5;index+=3) {
+/* for (let index = 0;index<5;index+=3) {
     showObjectInfo(arr[index])
-}
+} */
+// let index = 0
+// while check condition before DO
+/* while(index<5){
+    showObjectInfo(arr[index]);
+    index++ //bat buoc phai tang index
+} */
+/* 
+do {
+    showObjectInfo(arr[index]);
+    index++
 
+} while ( index<3 )
+ */
 
+let num1 = 5 //->6
+let num2 = 6 //->5
 
+let temp = num1 // temp =5 /* thong dung */
+num1 = num2 //num1=6, num2=6
+num2 = temp // num2=5
+
+num1 = num1 + num2    /* de co loi */
+num2 = num1 - num2 //11-6 =5
+num1 = num1 - num2 //11-5 =6
+
+num1^=num2^=num1^=num2 /* chi co 2 bien */
 
