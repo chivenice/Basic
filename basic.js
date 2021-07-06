@@ -8,10 +8,10 @@ let nullTest = null;
 
 const name = "Chi"
 const number = "1"
-const obj = {
-    firstName :"Nguyen",
-    lastName : "Chi",
-    age : "23",
+const chi = {
+    firstName: "Nguyen",
+    lastName: "Chi",
+    age: 18,
     male: true,
 }
 // Data Types
@@ -20,6 +20,29 @@ const obj = {
 // Object : luu tru nhung du lieu khac nhau
 // Boolean : True or False
 // Null, Undefined  assign: gan gia tri
+// Condition
+// if else
+
+/* if (chi.age == 18) {
+   console.log("Chi 18 tuoi")
+
+} else if (chi.age == 23) {
+   console.log("Chi 23 tuoi")
+
+}
+else {
+   console.log("Bi mat nhe!")
+}  */
+
+// switch case
+switch (chi.age) {
+    case 18:
+    case 23:
+        console.log("Chi 23 tuoi")
+        break; //tách case phải dùng break
+    default:
+        console.log("Khong biet")
+        break;
+}
 
 
-console.log({obj, undefinedTest, nullTest})
