@@ -10,19 +10,30 @@ h2 {
     display        : flex;
     align-items    : center;
     justify-content: center;
-    height         : 50vh;
+    height         : 30vh;
 }
 
 .question-title p {
-    margin-bottom: 0;
+    margin-bottom : 0;
+    letter-spacing: var(--spacing);
+    color         : var(--clr-grey-1);
+
 }
+
+
 .question-btn {
-    font-size: 30px;
-    background: transparent;
+    font-size: larger;
+    background  : white;
     border-color: transparent;
-    cursor: pointer;
-    color: var(--clr-gold);
-    transition: var(--transition);
+    cursor    : pointer;
+    color     : gold;
+    transition: none ;
+    padding: 0.5rem 1rem;
+
+}
+.question-btn:hover {
+    transform: rotate(90deg);
+
 }
 
 .question-title {
@@ -31,12 +42,12 @@ h2 {
 }
 
 .question-text {
-    color    : thistle;
-    font-size: 1rem;
-    padding: 1rem 0 1.5rem 0;
+    color     : thistle;
+    font-size : 1rem;
+    padding   : 1rem 0 1.5rem 0;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
-
 }
+
 .question-text p {
     margin-bottom: 0;
 }
@@ -47,13 +58,29 @@ h2 {
     box-shadow   : var(--light-shadow);
     padding      : 1.5em 1.5rem 0 1.5rem;
     margin-bottom: 2rem;
-    box-sizing   : border-box;
 }
 
 article {
     display   : block;
     box-sizing: content-box;
     width     : 100%;
-    border: 1px solid black;
+    border    : 1px solid black;
+    border-radius: 20%;
 
+}
+/* hide text */
+.question-text {
+    display: none;
+}
+.minus-icon {
+ display: none;
+}
+.show-text .minus-icon {
+    display: inline;
+}
+.show-text .plus-icon {
+    display: none;
+}
+.show-text .question-text {
+    display: block;
 }
