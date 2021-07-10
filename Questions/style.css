@@ -1,5 +1,5 @@
 body {
-    background-color: #dee2ff;
+    background-color: #cbc0d3;
 
 }
 
@@ -35,7 +35,6 @@ h2 {
 }
 .question-btn:hover {
     transform: rotate(90deg);
-
 }
 
 .question-title {
