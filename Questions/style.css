@@ -1,6 +1,6 @@
 body {
-    background-color: teal;
-    font-size       : 1rem;
+    background-color: #dee2ff;
+
 }
 
 h2 {
@@ -8,7 +8,7 @@ h2 {
     font-size      : 40px;
     margin         : auto;
     display        : flex;
-    align-items    : center;
+    align-items: center;
     justify-content: center;
     height         : 30vh;
 }
@@ -22,13 +22,15 @@ h2 {
 
 
 .question-btn {
-    font-size: larger;
-    background  : white;
+    background  : black;
+    color: goldenrod;
+    font-size: 30px;
     border-color: transparent;
     cursor    : pointer;
-    color     : gold;
     transition: none ;
     padding: 0.5rem 1rem;
+    margin: none;
+    display: block;
 
 }
 .question-btn:hover {
@@ -37,13 +39,20 @@ h2 {
 }
 
 .question-title {
-    color    : wheat;
-    font-size: 20px;
+    color    : #8e9aaf;
+    font-size: 30px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: whitesmoke;
 }
 
 .question-text {
-    color     : thistle;
-    font-size : 1rem;
+    color     : #354f52;
+    font-size : 1.5rem;
     padding   : 1rem 0 1.5rem 0;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -53,17 +62,18 @@ h2 {
 }
 
 .question {
-    background   : var(--clr-white);
-    border-radius: var(--radius);
-    box-shadow   : var(--light-shadow);
-    padding      : 1.5em 1.5rem 0 1.5rem;
+    background   : whitesmoke;
+    border-radius: 4px;
+    padding      : 20px;
     margin-bottom: 2rem;
+
 }
 
 article {
     display   : block;
-    box-sizing: content-box;
-    width     : 100%;
+    margin-left: auto;
+    margin-right: auto ;
+    width     : 50%;
     border    : 1px solid black;
     border-radius: 20%;
 
