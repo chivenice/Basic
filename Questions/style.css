@@ -81,6 +81,10 @@ article {
     padding: 20px 0 50px 0;
 
 }
+button.answer {
+    margin-left: 70%;
+
+}
 
 footer {
     margin-left: 40%;
