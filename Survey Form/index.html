@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/VPaoNP. -->
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Netflix Survey Form</h1>
+            <p id="description" class="description text-center">This survey related to the customer experience and
+                satisfaction after using Netflix</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group"><label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group"><label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email"
+                    required>
+            </div>
+
+            <div class="form-group"><label id="age-label" for="age">Age<span class="clue">(optional)</span></label>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Gae"
+                    required>
+            </div>
+
+            <div>
+                <p>Employment Status</p>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option disable selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Working Professional</option>
+                    <option value="business">Own Business</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Would you recommend Netflix to a friend?</p>
+                <label>
+                    <input name="use-recommend" type="radio" value="definitely" type="radio" class="input-radio"
+                        checked>Definitely</label>
+                <label>
+                    <input name="use-recommend" type="radio" value="maybe" type="radio" class="input-radio"
+                        checked>Maybe</label>
+                <label>
+                    <input name="use-recommend" type="radio" value="not-sure" type="radio" class="input-radio"
+                        checked>Not sure</label>
+            </div>
+
+            <div>
+                <p>Do you know what is Netflix and how does it work?</p>
+                <select name="netflixwork" id="netflix-work" class="form-control" required>
+                    <option disable selected value>Select an option</option>
+                    <option value="yes">Yes, I know all about Natflix and how it works</option>
+                    <option value="heard">Just heard about</option>
+                    <option value="not">Not aware about Netflix</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>
+                  Where do you prefer to view your Digital content like Movies. Documentaries, TV Series etc.?
+                  <span class="clue">(Check all that apply)</span>
+                </p>
+          
+                <label
+                  ><input
+                    name="prefer"
+                    value="web"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Online Websites</label
+                >
+                <label>
+                  <input
+                    name="prefer"
+                    value="tv"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Television</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="theaters"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Theaters, Multiplex</label
+                >
+
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>
