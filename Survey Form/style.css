@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 :root {
-    --color-white         : #f3f3f3;
+    --color-white        : #f3f3f3;
     --color-darkred      : #663535;
     --color-darkred-alpha: rgba(71, 24, 24, 0.8);
-    --color-green         : #69ac83;
+    --color-green        : #69ac83;
 }
 
 *,
@@ -22,25 +22,25 @@ body {
     color      : var(--color-white);
     margin     : 0;
 }
+
 body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+    content   : '';
+    position  : fixed;
+    top       : 0;
+    left      : 0;
+    height    : 100%;
+    width     : 100%;
+    z-index   : -1;
     background: var(--color-darkblue);
-    background-image: linear-gradient(
-        115deg,
-        rgba(102, 72, 70, 0.8),
-        rgba(161, 53, 53, 0.7)
-      ),
-      url(https://images.unsplash.com/photo-1621955964441-c173e01c135b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(115deg,
+            rgba(102, 72, 70, 0.8),
+            rgba(161, 53, 53, 0.7)),
+        url(https://images.unsplash.com/photo-1621955964441-c173e01c135b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80);
+    background-size    : cover;
+    background-repeat  : no-repeat;
     background-position: center;
-  }
+}
+
 /* BOOSTRAP SECTION */
 
 h1 {
@@ -49,7 +49,7 @@ h1 {
 }
 
 p {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
 }
 
 h1,
@@ -84,14 +84,24 @@ button {
     margin: 3.125rem auto 0 auto;
 }
 
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
 button {
     border: none;
 }
 
-.container {
-    width : 100%;
-    margin: 3.125rem auto 0 auto;
-}
+
 
 .header {
     padding      : 0 0.625rem;
@@ -120,8 +130,14 @@ form {
     background   : var(--color-darkred-alpha);
     padding      : 2.5rem 0.625rem;
     border-radius: 0.25rem;
-    width: 800px;
 }
+
+@media (min-width: 480px) {
+    form {
+        padding: 2.5rem;
+    }
+}
+
 
 .form-control {
     display         : block;
@@ -159,8 +175,8 @@ form {
 
 .submit-button {
     display      : block;
-    align-items: center;
-    width        : 50%;
+    text-align   : center;
+    width        : 100%;
     padding      : 0.75rem;
     background   : var(--color-green);
     color        : inherit;
