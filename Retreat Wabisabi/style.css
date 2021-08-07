@@ -130,6 +130,8 @@ nav {
 }
 
 nav>ul {
+    margin-top: 50px;
+    height: 20vw;
     width          : 80vw;
     display        : flex;
     flex-direction : column;
@@ -176,7 +178,7 @@ nav>ul {
     height: 30px;
     margin: 15px 0;
     border: 0;
-    background-color: #fdf0d5;
+    background-color: #faefda;
   }
   #hero input[type='submit']:hover {
     background-color: #ffc857;
@@ -300,5 +302,29 @@ nav>ul {
       margin: 0 auto;
       margin-bottom: 10px;
     }
+  }
+
+  footer {
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+  }
+  
+  footer > ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  footer > ul > li {
+    padding: 0 10px;
+  }
+  
+  footer > span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: black;
+    ;
   }
   
